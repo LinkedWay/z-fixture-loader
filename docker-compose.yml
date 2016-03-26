@@ -1,0 +1,18 @@
+app:
+  build: .
+  command: npm start
+  ports:
+    - "8080:8080"
+  links:
+    - elasticsearch:fixture-elasticsearch
+  volumes:
+    - ./:/development
+
+elasticsearch:
+  image: elasticsearch:2.2.1
+  ports:
+    - "9200:9200"
+  volumes:
+    - ./config/elasticsearch-test:/usr/share/elasticsearch/config
+
+

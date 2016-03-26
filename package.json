@@ -1,0 +1,14 @@
+{
+  "name": "fixture_loader",
+  "version": "1.0.0",
+  "description": "load fixuture from file system to various datasouce such as elasticesearch, mysql db, redis..",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test"
+  },
+  "author": "Ray Zhang",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  }
+}
