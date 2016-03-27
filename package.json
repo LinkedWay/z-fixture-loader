@@ -10,5 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "elasticsearch": "^10.1.3"
   }
 }
