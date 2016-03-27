@@ -20,7 +20,7 @@ describe("When load fixture to elasticsearch", function(){
             }).then(done, done);
         });
     });
-    it(" should load 5 business to es", function(){
+    it(" should load 1 business to es", function(){
         assert.equal(hits.length, 1, "should load 1 business");
     });
 });
