@@ -1,6 +1,6 @@
 FROM node:5.9.0
 
-MAINTAINER zak vyn <zkayvn@yahoo.com>
+MAINTAINER Ray Zhang <yzhangwei@gmail.com>
 
 #Want docker to cache node_modules, unless there is a change to package.json
 ADD package.json /tmp/package.json
