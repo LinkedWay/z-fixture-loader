@@ -1,10 +1,10 @@
 {
   "name": "z-fixture-loader",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "load fixuture from file system to various datasouce such as elasticesearch, mysql db, redis..",
   "main": "index.js",
   "scripts": {
-    "test": "docker-compose run app ./node_modules/.bin/mocha test"
+    "test": "docker-compose up -d elasticsearch; docker-compose build;docker-compose run -e NODE_ENV=test -e ES_HOST=fixture-elasticsearch -e ES_PORT=9200 app ./node_modules/.bin/mocha test"
   },
   "author": "Ray Zhang",
   "license": "ISC",

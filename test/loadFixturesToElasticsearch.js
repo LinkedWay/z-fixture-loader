@@ -15,7 +15,7 @@ describe("When load fixture to elasticsearch", function(){
                         "match_all": {}
                     }
                 }
-            }).then(function (body) {
+            }).then(function (body) {                
                 hits = body.hits.hits;
             }).then(done, done);
         });
@@ -24,4 +24,3 @@ describe("When load fixture to elasticsearch", function(){
         assert.equal(hits.length, 1, "should load 1 business");
     });
 });
-
