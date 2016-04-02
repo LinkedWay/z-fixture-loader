@@ -1,5 +1,5 @@
 {
-  "name": "fixture_loader",
+  "name": "z-fixture-loader",
   "version": "1.0.0",
   "description": "load fixuture from file system to various datasouce such as elasticesearch, mysql db, redis..",
   "main": "index.js",
@@ -8,10 +8,15 @@
   },
   "author": "Ray Zhang",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zakvyn/fixture-loader.git"
+  },
   "devDependencies": {
     "mocha": "^2.4.5"
   },
   "dependencies": {
+    "debug": "^2.2.0",
     "elasticsearch": "^10.1.3"
   }
 }
