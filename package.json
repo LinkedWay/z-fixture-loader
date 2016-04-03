@@ -16,6 +16,7 @@
     "mocha": "^2.4.5"
   },
   "dependencies": {
+    "app-root-path": "^1.0.0",
     "debug": "^2.2.0",
     "elasticsearch": "^10.1.3"
   }
